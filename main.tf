@@ -5,6 +5,7 @@ provider "aws" {
  count=5 
  ami = "ami-0166fe664262f664c"
  instance_type = "t2.medium"
+ key_name = "FirstEC2ServerKey"
  tags = {
  Name = var.instance_names[count.index]
  }
