@@ -3,7 +3,7 @@ provider "aws" {
  }
  resource "aws_instance" "one" {
  count=5 
- ami = "ami-07bc5cc4add81dad9"
+ ami = "ami-0166fe664262f664c"
  instance_type = "t2.medium"
  tags = {
  Name = var.instance_names[count.index]
